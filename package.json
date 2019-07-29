@@ -5,8 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "start": "nodemon server.js",
+    "debug": "node --nolazy --inspect-brk=3000 server.js"
   },
+
   "author": "Hanoj",
   "license": "ISC",
   "dependencies": {
@@ -17,6 +19,7 @@
     "morgan": "^1.9.1"
   },
   "devDependencies": {
+    "eslint": "^6.1.0",
     "nodemon": "^1.18.11"
   }
 }

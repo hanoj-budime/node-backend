@@ -10,9 +10,8 @@ const bodyParser = require('body-parser');
 
 //mongoose connections
 mongoose.connect(
-    'mongodb+srv://hanoj:' + 
-    process.env.Mongo_Atlas_PW + 
-    '@node-rest-shop-7gyns.mongodb.net/test?retryWrites=true', 
+    'mongodb+srv://hanoj:Newpass2@@node-rest-shop-7gyns.mongodb.net/test?retryWrites=true', 
+    //'mongodb+srv://hanoj:' + process.env.Mongo_Atlas_PW + '@node-rest-shop-7gyns.mongodb.net/test?retryWrites=true', 
     {
     useNewUrlParser : true
     }
