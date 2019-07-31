@@ -1,11 +1,12 @@
 const express = require('express');
 const app = express();
-const user = require('./routes/user')
 const morgan = require('morgan');
 const mongoose = require('mongoose');
-/*Parse incoming request bodies in a middleware before your handlers, 
-available under the req.body property*/
+/*Parse incoming request bodies in a middleware before your handlers, available under the req.body property*/
 const bodyParser = require('body-parser');
+
+const user = require('./routes/user');
+const userProfile = require('./routes/userProfile');
 
 
 //mongoose connections
@@ -44,6 +45,7 @@ app.use('/Hello',(req, res, next) =>{
 });
 
 app.use('/user',user);
+app.use('/userProfile',userProfile);
 
 app.use((error, req, res, next) => {
     res.status(error.status || 500);

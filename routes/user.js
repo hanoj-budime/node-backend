@@ -51,8 +51,7 @@ router.post("/login", (req, res, next) => {
 
 //get user 
 router.post("/", (req, res, next) => {
-  console.log(req.body.userId);
-  User.find({ _id:  req.body.userId })
+  User.find({ _id: req.body.userId })
     .then(result => {
       res.status(200).json({
         user: result[0],
