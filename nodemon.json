@@ -1,6 +1,6 @@
 {
     "env" : {
-        "Mongo_Atlas_PW" : "Newpass2@",
-        "JWT_KEY": "secret"
+        "Mongo_Atlas_PW" : "XXXXXXXX",
+        "JWT_KEY": "xxxxxxx"
     }
 }
